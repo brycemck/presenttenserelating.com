@@ -435,8 +435,8 @@ input[type="submit"] {
 	font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: solid 1px #d14d36;
-	background: #d14d36;
+    border: solid 1px #000000;
+	background: #000000;
     padding: 3px 10px;
     border-radius: 0;
 	-webkit-transition: all 0.8s ease;
@@ -452,7 +452,7 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
 	background: none;
-	color:#d14d36;
+	color:#000000;
 }
 
 button:focus,
@@ -546,7 +546,7 @@ textarea {
 --------------------------------------------------------------*/
 
 .top-bar{
-	background:#d14d36;
+	background:#000000;
 	padding: 10px 0;
 }
 .serch-form-coantainer{
@@ -565,9 +565,14 @@ textarea {
 	padding: 7px;
 	margin-top: 5px
 }
-.head-t1{
-	border-bottom: solid 1px #cacaca;
+.head-t1 {
     padding: 35px;
+}
+.head-t1:first-child {
+	padding: 35px 35px 0;
+}
+.head-t1:last-child {
+	padding: 0 35px 35px;
 }
 .site-header{
 	text-align:center;
@@ -586,7 +591,7 @@ textarea {
     line-height: 70px;
 }
 .site-title a{
-	color: #464646;
+	color: #000;
 }
 .site-title a:hover{
 	/*color: #898989;*/
@@ -692,7 +697,7 @@ img.single-post-thumbnail {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #d14d36;
+	color: #000;
 	-webkit-transition: all 0.8s ease;
 	-moz-transition: all 0.8s ease;
 	-o-transition: all 0.8s ease;
@@ -731,13 +736,12 @@ a:focus {
 	text-decoration: none;
 	font-size: 18px;
     font-weight: 400;
-    padding: 0 20px;
-    border-right: solid 1px #464646;
+    padding: 0 10px;
 	color: #464646;
     line-height: 18px;
 }
 .main-navigation a:hover{
-	color:#d14d36;
+	color:#000000;
 }
 .main-navigation li:last-child a{
 	border-right: none;	
@@ -807,7 +811,7 @@ a:focus {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
-	color: #d14d36;
+	color: #000000;
 }
 
 /* Small menu. */
@@ -959,7 +963,7 @@ a:focus {
 }
 
 .tagcloud a:hover{
-	background: #d14d36;
+	background: #000000;
 }
 
 .widget-title{
@@ -967,7 +971,7 @@ a:focus {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
-	border-bottom: solid 1px #d14d36;
+	border-bottom: solid 1px #000000;
     padding-bottom: 30px;
     margin: 0 0 30px;	
 	color: #fff;
@@ -1016,7 +1020,7 @@ a:focus {
 .blog .hentry:hover,
 .archive .hentry:hover,
 .search .hentry:hover, .home .hentry:hover{
-	background-color: #d14d36;
+	background-color: #000000;
     transform: scale(1.05);
 }
 
@@ -1106,7 +1110,7 @@ a:focus {
 }
 
 .dashed-border{
-	border-top: solid 2px #d14d36;
+	border-top: solid 2px #000000;
     margin: 45px auto;
     max-width: 60%;
 }
@@ -1204,8 +1208,8 @@ a img:hover{
 	font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: solid 1px #d14d36;
-	background: #d14d36;
+    border: solid 1px #000000;
+	background: #000000;
     padding: 7px 10px;
 	color: #fff;
 	-webkit-transition: all 0.8s ease;
@@ -1216,7 +1220,7 @@ a img:hover{
 }
 
 .read_more:hover, .comment-reply-link:hover{
-	color:#d14d36;
+	color:#000000;
 	background:transparent;
 	text-decoration: none;
 }
@@ -1230,7 +1234,7 @@ a img:hover{
 	font-size: 18px;
 	font-weight:600;
 	font-size: 24px;
-	color: #d14d36;
+	color: #000000;
 }
 
 .pagination a{
@@ -1264,7 +1268,7 @@ a img:hover{
     color: #fff;
     padding: 3px 6px;
     font-size: 15px;
-	background: #d14d36;
+	background: #000000;
     -webkit-transition: .3s ease-in-out;
 	-webkit-transition: all 0.8s ease;
 	-moz-transition: all 0.8s ease;
@@ -1341,7 +1345,7 @@ a img:hover{
     top: 0;
     left: 0;
     opacity: 0.4;
-	background: #d14d36;
+	background: #000000;
     padding: 1px 10px;
     font-size: 28px;
 	color: #d1d1d1;
@@ -1443,6 +1447,9 @@ a img:hover{
 #menu-social li a[href*="mailto:"]::before {
 	content: '\f0e0';
 }
+#menu-social li a[href*="tel:"]::before {
+	content: '\f095';
+}
 
 /*--------------------------------------------------------------
 ## Asides
@@ -1517,15 +1524,15 @@ a img:hover{
 	font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: solid 1px #d14d36;
+    border: solid 1px #000000;
     padding: 10px 10px;
-    background: #d14d36;
+    background: #000000;
     border-radius: 0;
 }
 
 #comments input[type="submit"]:hover{
-	border: solid 1px #d14d36;
-	color:#d14d36;
+	border: solid 1px #000000;
+	color:#000000;
 	background: none;
 }
 
@@ -1553,7 +1560,7 @@ ol.children{
 }
 
 .footer-widget-container a:hover{
-	color: #d14d36
+	color: #000000
 }
 
 .footer-widget-container ul{

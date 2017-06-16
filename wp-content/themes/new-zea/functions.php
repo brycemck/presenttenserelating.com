@@ -157,7 +157,7 @@ function new_zea_scripts() {
 	wp_enqueue_style( 'new-zea-ie-style', get_stylesheet_directory_uri() . "/assets/css/ie.css", array()  );
     wp_style_add_data( 'new-zea-ie-style', 'conditional', 'IE' );
 	wp_enqueue_style('new-zea-google-fonts', '//fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Raleway:100,300,300i,400,400i,500,600,700,900');
-	wp_enqueue_style( 'new-zea-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'new-zea-style', get_stylesheet_uri() . "?cachebuster=" . rand(0, 1000) );
 	
 	$new_zea_slider_speed = 6000;
 	if ( get_theme_mod( 'new_zea_slider_speed_setting' ) ) {

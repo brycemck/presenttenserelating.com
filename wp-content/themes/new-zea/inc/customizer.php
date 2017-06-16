@@ -87,7 +87,7 @@ function new_zea_customize_register( $wp_customize ) {
 	
 	/* color option */
 	$wp_customize->add_setting( 'new_zea_primary_color_setting', array (
-		'default'     => '#d14d36',
+		'default'     => '#000',
 		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
