@@ -31,7 +31,7 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-md-offset-1 col-md-4">
+                        <div class="col-xs-6 col-xs-offset-3 col-md-offset-1 col-md-4">
                             <div class="about-headshot">
                                 <?php echo the_post_thumbnail(); ?>
                             </div>
