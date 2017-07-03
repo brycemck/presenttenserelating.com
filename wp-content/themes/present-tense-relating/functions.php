@@ -114,8 +114,8 @@ function new_zea_widgets_init() {
 		'id' => 'new-zea-footer-one-widget',
 		'before_widget' => '<div id="footer-one" class="widget footer-widget">',
 		'after_widget' => "</div>",
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
 	) );
 	
 	register_sidebar( array(
@@ -123,8 +123,8 @@ function new_zea_widgets_init() {
 		'id' => 'new-zea-footer-two-widget',
 		'before_widget' => '<div id="footer-two" class="widget footer-widget">',
 		'after_widget' => "</div>",
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
 	) );
 	
 	register_sidebar( array(
@@ -132,8 +132,8 @@ function new_zea_widgets_init() {
 		'id' => 'new-zea-footer-three-widget',
 		'before_widget' => '<div id="footer-three" class="widget footer-widget">',
 		'after_widget' => "</div>",
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
 	) );
 	
 }

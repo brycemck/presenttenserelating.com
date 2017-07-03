@@ -25,6 +25,11 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
         	<div class="container">
             	<div class="white-background">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-centered services-intro">
+                            <p><?php echo get_field('services_intro'); ?></p>
+                        </div>
+                    </div>
                     <?php
                         if ( have_rows('services') ):
                             while ( have_rows('services') ) : the_row();

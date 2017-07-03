@@ -27,7 +27,7 @@ get_header(); ?>
             	<div class="white-background">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="full-width-title"><span>Jonathan Chiaravalle</span></div>
+                            <div class="full-width-title"><h3>Jonathan Chiaravalle</h3></div>
                         </div>
                     </div>
                     <div class="row">

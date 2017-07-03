@@ -70,7 +70,6 @@
         <div class="head-t1">
             <div class="container">
                 <nav id="site-navigation" class="main-navigation" role="navigation">
-                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
                 </nav><!-- #site-navigation -->
             </div>

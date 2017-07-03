@@ -47,7 +47,7 @@ get_header(); ?>
                             <div class="col-sm-9 col-md-7 slide-post-details">
                                 <a href="<?php echo get_permalink($recentPost['ID']); ?>"><h1><?php echo $recentPost["post_title"]; ?></h1></a>
                                 <p>
-                                    <?php echo wp_trim_words( $recentPost["post_content"], $num_words = 55 ); ?>
+                                    <?php echo wp_trim_words( $recentPost["post_content"], $num_words = 45 ); ?>
                                 </p>
                                 <a href="<?php echo get_permalink($recentPost['ID']); ?>" class="cta">Read More ></a>
                             </div>      
