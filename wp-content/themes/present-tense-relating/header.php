@@ -19,6 +19,18 @@
 
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Playfair+Display" rel="stylesheet">
 
+<meta name="description" content="Working in the field of human services since 1988, I bring an understanding and experience around the issues of relationships, sexuality, depression, anxiety, teen life issues and transitions." />
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" value="summary">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="<?php echo wp_title( $sep = '|' );?>" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="<?php echo get_site_url(); ?>" />
+<meta property="og:image" content="<?php echo get_site_url(); ?>/wp-content/uploads/2017/06/Crown-Point.jpg" />
+<meta property="og:description" content="Working in the field of human services since 1988, I bring an understanding and experience around the issues of relationships, sexuality, depression, anxiety, teen life issues and transitions." />
+
 <?php wp_head(); ?>
 </head>
 

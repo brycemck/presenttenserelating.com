@@ -47,6 +47,11 @@ get_header(); ?>
         	<div class="container">
             	<div class="white-background">
                     <div class="row">
+                        <div class="col-xs-12 col-md-8 col-centered">
+                            <?php wpforms_display( 187, "", "" ); ?>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-xs-12 col-md-4">
                             <div class="contact-method">
                                 <a href="tel:<?php echo preg_replace('/[^A-Za-z0-9\-]/', '', get_field( 'phone' )); ?>">

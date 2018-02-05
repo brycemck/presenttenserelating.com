@@ -1582,6 +1582,24 @@ a img:hover{
 	margin: 20px 0;
 	border-bottom: 1px solid black;
 }
+.services-next-steps {
+	text-align: center;
+}
+
+/* RESOURCES PAGE */
+.resources-thing>div {
+	text-align: center;
+}
+.resources-intro {
+	text-align: center;
+}
+.resource {
+	text-align: center;
+}
+.resource-separator {
+	margin: 20px 0;
+	border-bottom: 1px solid black;
+}
 
 /* BLOG PAGE */
 .blog-post {
@@ -1602,6 +1620,24 @@ a img:hover{
 	margin: 20px 0;
 	border-bottom: 1px solid black;
 }
+.blog-pagination {
+	position: relative;
+	text-align: center;
+}
+.blog-pagination .next {
+	position: absolute;
+	right: 0;
+}
+.blog-pagination .prev {
+	position: absolute;
+	left: 0;
+}
+.blog-pagination .page-numbers {
+	margin: 0 5px;
+}
+.blog-pagination .current {
+	text-decoration: underline;
+}
 
 /* SINGLE POST PAGE */
 body.single-post .slide-post-details {
@@ -1619,10 +1655,14 @@ body.single-post #menu-item-26 a {
 }
 
 /* CONTACT PAGE */
+.wpforms-field-medium {
+	margin: auto !important;
+}
 .contact-method {
 	text-align: center;
 	position: relative;
 	margin-bottom: 100px;
+	margin-top: 50px;
 }
 .contact-method:last-child {
 	margin-bottom: 100px;
@@ -1763,10 +1803,6 @@ ol.children{
 
 .footer-widget-container a{
 	color: #ffffff;	
-}
-
-.footer-widget-container a:hover{
-	color: #414755
 }
 
 .footer-widget-container .widget-title {
@@ -2293,6 +2329,9 @@ object {
 	}
 	.contact-method:last-child {
 		margin-bottom: initial;
+	}
+	.resources-thing>div:first-child {
+		border-right: 1px solid black;
 	}
 }
 @media (min-width: 1200px) {

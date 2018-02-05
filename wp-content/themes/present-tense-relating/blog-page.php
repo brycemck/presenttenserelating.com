@@ -12,7 +12,8 @@ $page    = get_query_var( 'page' );
 // Define custom query parameters
 $args    = array(
     'post_type'      => 'post',
-    'paged'          => ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1
+    'paged'          => ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1,
+    'posts_per_page' => 10
 );
 
 if ( is_front_page() )
@@ -26,6 +27,19 @@ $latestPostArgs = array(
     'post_type' => 'post'
 );
 $recentPost = wp_get_recent_posts( $latestPostArgs )[0];
+
+function pagination() {
+    global $the_query;
+
+    $big = 999999999; // need an unlikely integer
+
+    echo paginate_links( array(
+        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+        'format' => '?paged=%#%',
+        'current' => max( 1, get_query_var('paged') ),
+        'total' => $the_query->max_num_pages
+    ) );
+}
 	
 get_header(); ?>
     <section id="home-slider">    
@@ -66,7 +80,7 @@ get_header(); ?>
                             echo "<div class='col-xs-12'>";
                                 echo "<div class='blog-post'>";
                                     echo "<a href='"; echo get_permalink(); echo "'>"; echo "<h1>"; echo get_the_title(); echo "</h1></a><br>";
-                                    echo "<span>"; echo the_date(); echo "</span>";
+                                    echo "<span>"; echo get_the_date(); echo "</span>";
                                     echo "<p>"; echo get_the_excerpt(); echo "</p>";
                                     echo "<a href='"; echo get_permalink(); echo "'>Read More...</a>";
                                 echo "</div>";
@@ -77,7 +91,9 @@ get_header(); ?>
                                 echo "<div class='blog-post-separator'></div>";
                             echo "</div>";
                         echo "</div>";
-                    endwhile; else : ?>
+                    endwhile;
+                        echo "<div class='blog-pagination'>"; pagination(); echo "</div>";
+                    else : ?>
                         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
                     <?php endif; ?>
                 </div><!-- white-background -->

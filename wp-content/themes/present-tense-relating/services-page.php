@@ -49,6 +49,13 @@ get_header(); ?>
                             endwhile;
                         endif;
                     ?>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="services-next-steps">
+                                <p><?php echo get_field('next_steps'); ?></p>
+                            </div>
+                        </div>
+                    </div>
                 </div><!-- white-background -->
 			</div>
 		</main><!-- #main -->
